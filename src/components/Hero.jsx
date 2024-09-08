@@ -1,8 +1,9 @@
 import { HERO_CONTENT } from "../constants";
+import profilePic from "../assets/me.jpeg";
 
 const Hero = () => {
   return (
-    <div className = "pb-4 lg:mb-35">
+    <div className = "pb-5 lg:mb-30">
         <div className="flex flex-wrap">
             <div className = "w-full lg:w-1/2">
                 <div className = "flex flex-col items-center lg:items-start">
@@ -13,8 +14,15 @@ const Hero = () => {
                             AI/ML Enthusiast
                         </span>
                     </div>
-                    <p className="my-2 text-white max-w-xl py-6 font-light tracking-tighter">{HERO_CONTENT}</p>
+                    <p className="my-2 text-white max-w-xl py-4 font-light">{HERO_CONTENT}</p>
                 </div>
+            </div>
+            <div className="w-full lg:w-1/2 flex justify-center lg:justify-center lg:p-3">
+                <img
+                    src={profilePic}
+                    alt="Parin Acharya"
+                    className="object-contain w-1/2"
+                />
             </div>
         </div>
     </div>
