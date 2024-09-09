@@ -64,7 +64,7 @@ const Technologies = () => {
     <div>
       <h2 className="py-7 font-thick text-center text-white text-3xl">Technologies</h2>
 
-      <div className="flex flex-wrap rounded-l items-center justify-center gap-4">
+      <div className="flex flex-wrap rounded-l items-center justify-center gap-4 pb-7">
         {icons.map((icon, index) => (
           <div key={index} className=" hover:opacity-50 transition-opacity duration-300 rounded-xl border-2 border-neutral-400 p-4">
             {icon}
@@ -74,7 +74,7 @@ const Technologies = () => {
 
       
       <div style={styles.container} className="text-white">
-        <p className='text-2xl font-thick p-4'>Experience with</p>
+        <p className='text-2xl font-thick p-4'>Developed AI Apps using cutting-edge tools on </p>
         <div className='text-white font-thin' style={styles.text}>{currentText}</div>
       </div>
     </div>
