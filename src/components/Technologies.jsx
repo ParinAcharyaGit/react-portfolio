@@ -95,10 +95,10 @@ const Technologies = () => {
       
       <div style={styles.container} className="text-white">
         <h2 className="py-7 font-thin text-center text-white text-2xl">
-            Developed <span className="font-bold underline text-purple-500">AI apps</span> using <span className="font-bold underline text-purple-500">cutting-edge tools</span> on 
+            Developed <span className="font-bold underline text-purple-500">AI apps</span> that leverage <span className="font-bold underline text-purple-500">cutting-edge tools</span> like:
         </h2>
 
-        <div className='text-white font-thick' style={styles.text}> {": "} {currentText}</div>
+        <div className='text-white font-thick' style={styles.text}> {currentText}</div>
       </div>
     </div>
   );

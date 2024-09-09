@@ -13,7 +13,7 @@ const Experience = () => {
             </motion.div>
 
             <div className="w-full max-w-xl lg:w-3/4 text-white">
-              <div className="mb-4 font-semibold hover:opacity-50 transition-opacity duration-300 text-purple-900">
+              <div className="mb-8 font-semibold hover:opacity-50 transition-opacity duration-300 text-purple-900">
                 {experience.role} - {" "}
                 <span className="text-sm">
                   {experience.company}
