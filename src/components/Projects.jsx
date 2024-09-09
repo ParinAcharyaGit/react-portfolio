@@ -3,7 +3,7 @@ import {PROJECTS} from "../constants";
 const Projects = () => {
     return (  
         <div>
-            <h2 className="my-10 text-center text-4xl text-white font-thin">My Projects</h2>
+            <h2 className="my-10 text-center text-4xl text-white font-bold">My Projects</h2>
             <div>
                 {PROJECTS.map((project, index) => (
                     <div key = {index} className = "mb-8 flex flex-wrap lg:justify-center hover:opacity-50 transition-opacity duration-300">

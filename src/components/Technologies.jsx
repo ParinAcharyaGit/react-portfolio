@@ -4,6 +4,20 @@ import { FaPython, FaJava } from 'react-icons/fa';
 import { IoLogoJavascript } from 'react-icons/io';
 import { MdHtml, MdOutlineCss } from 'react-icons/md';
 import { SiFlask } from 'react-icons/si';
+import { motion } from "framer-motion";
+
+const iconVariants = (duration) => ({
+  initial: {y: -10},
+  animate: {
+    y: [10, -10],
+    transition : {
+      duration: duration,
+      ease: "Linear",
+      repeat: Infinity,
+      repeatType: "reverse",
+    }
+  }
+})
 
 const Technologies = () => {
   // Array of texts to display
@@ -62,20 +76,29 @@ const Technologies = () => {
 
   return (
     <div>
-      <h2 className="py-7 font-thick text-center text-white text-3xl">Technologies</h2>
+      <motion.h2
+      className="py-7 font-thick text-center text-white text-3xl">Technologies</motion.h2>
 
       <div className="flex flex-wrap rounded-l items-center justify-center gap-4 pb-7">
         {icons.map((icon, index) => (
-          <div key={index} className=" hover:opacity-50 transition-opacity duration-300 rounded-xl border-2 border-neutral-400 p-4">
+          <motion.div 
+          variants={iconVariants(2.5)}
+          initial="initial"
+          animate="animate"
+          
+          key={index} className=" hover:opacity-50 transition-opacity duration-300 rounded-xl border-2 border-neutral-400 p-4">
             {icon}
-          </div>
+          </motion.div>
         ))}
       </div>
 
       
       <div style={styles.container} className="text-white">
-        <p className='text-2xl font-thick p-4'>Developed AI Apps using cutting-edge tools on </p>
-        <div className='text-white font-thin' style={styles.text}>{currentText}</div>
+        <h2 className="py-7 font-thin text-center text-white text-2xl">
+            Developed <span className="font-bold underline text-purple-500">AI apps</span> using <span className="font-bold underline text-purple-500">cutting-edge tools</span> on 
+        </h2>
+
+        <div className='text-white font-thick' style={styles.text}> {": "} {currentText}</div>
       </div>
     </div>
   );
