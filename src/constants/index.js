@@ -10,10 +10,10 @@ export const ABOUT_TEXT = `I am an IB Diploma graduate from Kenya with an unwave
 export const experiences = [
   {
     year: "2024",
-    role: "Senior Full Stack Developer",
-    company: "Google Inc.",
-    description: `Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
-    technologies: ["Javascript", "React.js", "Next.js", "mongoDB"],
+    role: "IBM TechXChange Hackathon",
+    company: "Team Lead",
+    description: `Using IBM Watson, including Watsonx.ai's foundational IBM Granite LLM to develop a generative AI use-case for start-ups. The model leverages Retrieval Augmented Generation(RAG) to extract insights for AI driven document intelligence. The user interface supported by the Watson Assistant chatbot.`,
+    technologies: ["React.js", "Watson ML", "Watsonx Studio"],
   },
   {
     year: "2023",
@@ -24,21 +24,20 @@ export const experiences = [
   },
   {
     year: "2022 - Present",
-    role: "Full Stack Developer",
-    company: "Indepedent",
-    description: `Developed and maintained web applications using  React.js. Designed and implemented RESTful APIs for data communication.`,
-    technologies: ["Python", "Flask", "SQLite"],
-  },
-  {
-    year: "2022 - Present",
     role: "Independent Researcher",
     company: "IBM Quantum Labs",
     description: `explored the vulnerabilities of contemporary cryptographic algorithms to Shor's quantum factoring algorithm, deepening my understanding of the future challenges in cybersecurity.`,
-    technologies: ["Python", "Flask", "SQLite"],
+    technologies: ["Qiskit", "Python", "JupyterLabs"],
   },
 ];
 
 export const PROJECTS = [
+  {
+    title: "docdigest.ai SAAS Application",
+    image: project2,
+    description: `Developed and maintained SAAS web applications using Next.js. Designed and implemented RESTful APIs.`,
+    technologies: ["Next.js", "Tailwind.css", "Stripe API", "Langchain", "Pinecone", "OpenAI", "Vercel"],
+  },
   {
     title: "E-Commerce Application",
     image: project1,
@@ -63,7 +62,7 @@ export const PROJECTS = [
 ];
 
 export const CONTACT = {
-  address: "Eldoret, Kenya",
-  phoneNo: "+12 4555 666 00 ",
+  address: "Kenya",
+  phoneNo: "+253 727 653888",
   email: "acharyaparin05@gmail.com",
 };
